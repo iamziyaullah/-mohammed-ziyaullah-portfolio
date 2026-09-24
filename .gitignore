@@ -1,0 +1,29 @@
+# Local Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Never publish a live database: it contains the admin's password hash and edits
+data/*.db
+data/*.db-*
+data/*.sqlite
+data/*.sqlite-*
+!data/.gitkeep
+!data/seed.json
+
+# Portraits uploaded through the private studio
+uploads/*
+!uploads/.gitkeep
+
+# Secrets and local files
+.env
+.env.*
+!.env.example
+*.log
+*.zip
+.DS_Store
+Thumbs.db
+qa/

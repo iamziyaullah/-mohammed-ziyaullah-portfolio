@@ -1,0 +1,14 @@
+.git
+.venv
+__pycache__
+*.pyc
+.env
+.env.*
+*.zip
+*.log
+qa
+data/*.db
+data/*.db-*
+data/*.sqlite*
+uploads/*
+!uploads/.gitkeep
